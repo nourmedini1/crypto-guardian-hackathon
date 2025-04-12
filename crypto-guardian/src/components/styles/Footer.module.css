@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--secondary-dark);
+  color: var(--text-secondary);
+  padding: 1rem;
+  border-top: 1px solid var(--hover-color);
+  margin-top: auto;
+}
+
+.text {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.text span {
+  color: var(--accent-blue);
+  font-weight: 600;
+  letter-spacing: 1px;
+}

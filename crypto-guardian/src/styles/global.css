@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-dark: #0A192F;  /* Dark blue background */
+  --secondary-dark: #112240; /* Slightly lighter blue for cards/sections */
+  --accent-blue: #64FFDA;   /* Bright accent color */
+  --text-primary: #E6F1FF;  /* Light text color */
+  --text-secondary: #8892B0; /* Secondary text color */
+  --hover-color: #233554;   /* Hover state color */
+  --font-primary: 'Space Grotesk', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-dark);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hover-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+  background-color: transparent !important;
+  border-color: var(--accent-blue) !important;
+  color: var(--accent-blue) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.form-control {
+  background-color: var(--secondary-dark) !important;
+  border-color: var(--hover-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(100, 255, 218, 0.25) !important;
+}
+
+.form-control::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+.offcanvas {
+  background-color: var(--secondary-dark) !important;
+  color: var(--text-primary) !important;
+}
+
+.offcanvas-header .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}

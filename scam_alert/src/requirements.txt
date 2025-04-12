@@ -1,0 +1,6 @@
+fastapi==0.115.8
+uvicorn==0.34.0
+python-dotenv==0.21.0
+python-telegram-bot==21.10
+requests==2.32.3
+mistralai==1.5.0  

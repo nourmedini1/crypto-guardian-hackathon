@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M20 2L4 8V20C4 30 20 38 20 38C20 38 36 30 36 20V8L20 2Z" fill="#1A1B1E"/>
+  <!-- Shield border -->
+  <path d="M20 2L4 8V20C4 30 20 38 20 38C20 38 36 30 36 20V8L20 2Z" stroke="#64FFDA" stroke-width="2"/>
+  <!-- Ethereum symbol -->
+  <path d="M20 8L13 18L20 22L27 18L20 8Z" fill="#64FFDA"/>
+  <path d="M20 22L13 18L20 32L27 18L20 22Z" fill="#64FFDA" fill-opacity="0.6"/>
+</svg>

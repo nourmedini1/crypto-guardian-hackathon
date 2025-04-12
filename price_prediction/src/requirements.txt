@@ -1,0 +1,9 @@
+fastapi==0.115.8
+uvicorn==0.34.0
+tensorflow-cpu
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+python-multipart==0.0.20
+joblib==1.4.2
+apscheduler==3.11.0

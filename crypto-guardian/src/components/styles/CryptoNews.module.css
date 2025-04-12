@@ -1,0 +1,129 @@
+.newsContainer {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.newsCard {
+  background-color: var(--secondary-dark) !important;
+  border: 1px solid var(--hover-color) !important;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.newsCard:hover {
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.15);
+  border-color: var(--accent-blue) !important;
+}
+
+.newsHeader {
+  background-color: transparent !important;
+  border-bottom: none;
+  padding: 1rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.titleSection {
+  flex: 1;
+}
+
+.newsTitle {
+  color: var(--accent-blue);
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.newsCard:hover .newsTitle {
+  color: var(--text-primary);
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+}
+
+.newsDate {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.newsSummary {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.toggleButton {
+  color: var(--accent-blue) !important;
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  transition: all 0.3s ease;
+}
+
+.toggleButton:hover {
+  color: var(--text-primary) !important;
+  transform: scale(1.1);
+}
+
+.newsBody {
+  border-top: 1px solid var(--hover-color);
+  padding: 1rem;
+}
+
+.newsContent {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.newsContent p {
+  margin-bottom: 1rem;
+}
+
+.newsFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--hover-color);
+}
+
+.newsSource {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.tagContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  color: var(--accent-blue);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: rgba(100, 255, 218, 0.2);
+  transform: translateY(-1px);
+}

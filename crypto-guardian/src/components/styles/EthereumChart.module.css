@@ -1,0 +1,124 @@
+.chartWrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.titleText {
+  color: #64FFDA;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.subtitleText {
+  color: #e0e0e0;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  opacity: 0.8;
+}
+
+.chartContainer {
+  flex: 1;
+  min-height: 400px;
+  width: 100%;
+  background-color: rgba(26, 27, 30, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  position: relative;
+}
+
+.chartContainer:hover {
+  border-color: #64FFDA;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.15);
+  transition: all 0.3s ease;
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgba(26, 27, 30, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.errorContainer {
+  color: #FF6B6B;
+}
+
+.metricsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.metric span:first-child {
+  color: #64FFDA;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.metric span:last-child {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .chartWrapper {
+    padding: 10px;
+    min-height: 500px;
+  }
+
+  .chartContainer {
+    padding: 15px;
+    margin: 15px 0;
+    min-height: 350px;
+  }
+
+  .chartTitle {
+    margin-bottom: 15px;
+  }
+
+  .metricsContainer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .metric {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}

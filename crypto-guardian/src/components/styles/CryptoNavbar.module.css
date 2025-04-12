@@ -1,0 +1,177 @@
+.navbar {
+  background-color: var(--secondary-dark) !important;
+  border-bottom: 1px solid var(--hover-color) !important;
+  padding: 0.5rem !important;
+  height: 56px !important;
+}
+
+.brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  padding: 0 !important;
+  transition: all 0.3s ease !important;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5) !important;
+}
+
+.logo {
+  width: 32px !important;
+  height: 32px !important;
+  transition: filter 0.3s ease !important;
+  filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.5)) !important;
+  animation: logoGlow 2s ease-in-out infinite alternate !important;
+}
+
+@keyframes logoGlow {
+  from {
+    filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.5)) !important;
+  }
+  to {
+    filter: drop-shadow(0 0 16px rgba(100, 255, 218, 0.8)) !important;
+  }
+}
+
+.brandText {
+  color: var(--accent-blue) !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+}
+
+.glowText {
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5) !important;
+  animation: glow 2s ease-in-out infinite alternate !important;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5) !important;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(100, 255, 218, 0.8) !important;
+  }
+}
+
+
+
+.brand:hover .brandText {
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+.navLink {
+  color: var(--text-secondary) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.5px !important;
+  width: fit-content !important;
+  margin: 0 0.5rem !important;
+}
+
+.navLink:hover {
+  color: var(--accent-blue) !important;
+  background-color: var(--hover-color) !important;
+  box-shadow: 0 0 8px rgba(100, 255, 218, 0.2);
+}
+
+.activeLink {
+  color: var(--accent-blue) !important;
+  border: 1px solid var(--accent-blue) !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.5rem !important;
+}
+
+/* Navbar collapse styles */
+:global(.navbar-collapse) {
+  background-color: var(--secondary-dark) !important;
+}
+
+@media (max-width: 991px) {
+  :global(.navbar-collapse) {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-top: 1px solid var(--hover-color) !important;
+    padding: 0.75rem 0 !important;
+  }
+
+  :global(.navbar-nav) {
+    padding: 0.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .navLink {
+    padding: 0.5rem 1.25rem !important;
+    margin: 0.375rem 0 !important;
+    min-width: 200px !important;
+    max-width: 80% !important;
+    text-align: center !important;
+  }
+
+  .activeLink {
+    padding: 0.5rem 1.25rem !important;
+  }
+}
+
+/* Toggle button styles */
+:global(.navbar-toggler) {
+  border: none !important;
+  padding: 0.25rem !important;
+  margin-left: 0.5rem !important;
+  width: 32px !important;
+  height: 32px !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+}
+
+@media (max-width: 991px) {
+  :global(.navbar-toggler) {
+    display: inline-flex !important;
+  }
+}
+
+:global(.navbar-toggler:hover) {
+  background-color: var(--hover-color) !important;
+  border-radius: 4px !important;
+}
+
+:global(.navbar-toggler:focus) {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+:global(.navbar-toggler-icon) {
+  background-image: none !important;
+  position: relative !important;
+  width: 24px !important;
+  height: 2px !important;
+  background-color: var(--accent-blue) !important;
+}
+
+:global(.navbar-toggler-icon::before),
+:global(.navbar-toggler-icon::after) {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  width: 24px !important;
+  height: 2px !important;
+  background-color: var(--accent-blue) !important;
+  transition: all 0.3s ease !important;
+}
+
+:global(.navbar-toggler-icon::before) {
+  top: -6px !important;
+}
+
+:global(.navbar-toggler-icon::after) {
+  bottom: -6px !important;
+}

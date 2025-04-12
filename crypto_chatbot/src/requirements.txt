@@ -1,0 +1,8 @@
+pdfplumber==0.11.5
+langchain-huggingface==0.1.2
+langchain-community==0.3.17
+faiss-cpu==1.10.0
+fastapi==0.115.8
+uvicorn==0.34.0
+python-dotenv==0.21.0
+mistralai==1.5.0  

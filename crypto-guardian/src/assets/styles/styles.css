@@ -1,0 +1,29 @@
+/* index.css or App.css */
+
+/* General body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Card styles */
+.card {
+  background-color: #1d1f28;
+  border: 1px solid #333;
+}
+
+.card-body {
+  color: #e0e0e0;
+}
+
+/* Links */
+a {
+  color: #00b0ff;
+}
+
+a:hover {
+  color: #00caff;
+}
