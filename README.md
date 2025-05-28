@@ -1,6 +1,9 @@
 # 🛡 Crypto Guardian – AI-Powered Crypto Scam Detection Platform
 
 **🏆 Awarded 3rd Place at the AI Odyssey Hackathon by GDG SUP'COM**
+<p align="center">
+  <img src="./crypto-guardian/src/assets/logo.png" alt="Crypto Guardian Logo" width="200"/>
+</p>
 
 Crypto Guardian is a full-stack AI-powered platform designed to detect cryptocurrency scams in real time, provide market insights, and assist users with a voice-enabled intelligent assistant. The project combines real-time sentiment analysis, scam pattern detection, predictive modeling, and conversational AI to improve safety and trust in the crypto ecosystem.
 
