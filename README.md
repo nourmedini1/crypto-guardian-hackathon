@@ -80,5 +80,12 @@ Crypto Guardian combines several intelligent components to form an integrated as
 - Earned 3rd place at the AI Odyssey Hackathon for innovation and impact.
 
 ---
+<h3 align="center">Built By</h3>
+
+<p align="center">
+  <a href="https://github.com/Karim-zitouna-01">Mohamed Karim Zitouna</a> ·
+  <a href="https://github.com/nourmedini1">Mohamed Nour Medini</a> ·
+  <a href="https://github.com/AbderrazagB">Abderrazag Boussaid</a>
+</p>
 
 
